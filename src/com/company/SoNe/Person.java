@@ -1,4 +1,4 @@
-package com.company.SN;
+package com.company.SoNe;
 
 public class Person implements Comparable <Person>
 {

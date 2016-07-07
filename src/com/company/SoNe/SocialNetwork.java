@@ -1,4 +1,4 @@
-package com.company.SN;
+package com.company.SoNe;
 
 import com.google.common.collect.*;
 
