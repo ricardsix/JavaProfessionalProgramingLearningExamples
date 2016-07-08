@@ -155,5 +155,20 @@ public class Main
         System.out.println("Pol's friend couple: " + socialNetwork.getFriendsCouple(pol));
         System.out.println("Ricard's friend couple: " + socialNetwork.getFriendsCouple(ricard));
 
+        System.out.println("Daniel's number of friends: " + socialNetwork.getNumberOfFriends(daniel));
+        System.out.println("David's number of friends:  " + socialNetwork.getNumberOfFriends(david));
+        System.out.println("Dimple's number of friends: " + socialNetwork.getNumberOfFriends(dimple));
+        System.out.println("Ismael's number of friends: " + socialNetwork.getNumberOfFriends(ismael));
+        System.out.println("Ivan's number of friends: " + socialNetwork.getNumberOfFriends(ivan));
+        System.out.println("Jordi's number of friends: " + socialNetwork.getNumberOfFriends(jordi));
+        System.out.println("Judith's number of friends: " + socialNetwork.getNumberOfFriends(judith));
+        System.out.println("Marcos's number of friends: " + socialNetwork.getNumberOfFriends(marcos));
+        System.out.println("Noelia's number of friends: " + socialNetwork.getNumberOfFriends(noelia));
+        System.out.println("Oriol's number of friends: " + socialNetwork.getNumberOfFriends(oriol));
+        System.out.println("Oscar's number of friends: " + socialNetwork.getNumberOfFriends(oscar));
+        System.out.println("Pol's number of friends: " + socialNetwork.getNumberOfFriends(pol));
+        System.out.println("Ricard's number of friends: " + socialNetwork.getNumberOfFriends(ricard));
+
+        System.out.println(""+socialNetwork.popularity(ricard));
     }
 }

@@ -66,6 +66,10 @@ public class SocialNetwork
             return couple;
         }
     }
+    public Integer getNumberOfFriends(Person p1)
+    {
+        return getFriends(p1).size();
+    }
     public Set <Person> getFriends(Person p1)
     {
         return friends.get(p1);
@@ -93,9 +97,27 @@ public class SocialNetwork
         }
         return couples;
     }
-    public Set<Person> popularity (Person person)
+    public List<Person> popularity (Person person)
     {
-        return null;
+        List<Person> personList = new ArrayList<>(peopleByName.values());
+        Collections.sort
+                (
+                        personList, (p1, p2) ->
+        {
+            int numFriends1 = getNumberOfFriends(p1);
+            int numFriends2 = getNumberOfFriends(p2);
+            if (numFriends1<numFriends2)
+            {
+                return 1;
+            }
+            if (numFriends1>numFriends2)
+            {
+                return -1;
+            }
+            else return 0;
+        }
+                );
+        return personList;
     }
     public int getConnectionDegree(Person p1, Person p2)
     {
